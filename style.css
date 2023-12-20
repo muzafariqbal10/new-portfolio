@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* font-family: Arial, sans-serif; */
+    background-color: #daaeae;
+
+}
+
+.navbar {
+    background-color: #ad9494;
+    overflow: hidden;
+
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-left: 150px;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar a.active {
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.img1 {
+    width: 400px;
+    height: 500px;
+    background-color: #ad9494;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    border-radius: 10px;
+}
+
+.img1 h2 {
+    position: relative;
+    top: 50px;
+    left: 90px;
+}
+
+.img1 h3 {
+    position: relative;
+    top: 50px;
+    left: 110px;
+}
+
+.img1:hover {
+    background-color: #daaeae;
+    transition: background-color 1s ease-in-out;
+    /* transform: scale(1.1); */
+    /* transition: transform 1.5s ease-out; */
+
+}
+
+.img1 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(135, 158, 150);
+    position: relative;
+    left: 80px;
+    top: 50px;
+}
+
+.text {
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 400px;
+    left: 600px;
+}
+
+.text p {
+    position: relative;
+    top: 70px;
+    left: 30px;
+    width: 90%;
+    height: 30%;
+    letter-spacing: 1px;
+}
+
+.text b {
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-size: large;
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+
+    }
+
+    .img1 {
+        width: 200px;
+        height: 250px;
+        background-color: #ad9494;
+        position: relative;
+        left: 100px;
+        top: 50px;
+        border-radius: 10px;
+    }
+
+    .img1 h2 {
+        position: relative;
+        top: 10px;
+        left: 40px;
+        font-size: 13px;
+    }
+
+    .img1 h3 {
+        position: relative;
+        top: 10px;
+        left: 45px;
+        font-size: 10px;
+    }
+
+    .img1:hover {
+        background-color: #daaeae;
+        transition: background-color 1s ease-in-out;
+        /* transform: scale(1.1); */
+        /* transition: transform 1.5s ease-out; */
+
+    }
+
+    .img1 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgb(135, 158, 150);
+        position: relative;
+        left: 30px;
+        top: 10px;
+    }
+
+    .text {
+
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: 30px;
+        left: 10px;
+        align-items: center;
+    }
+
+    .text p {
+        position: relative;
+        top: 70px;
+        left: 30px;
+        width: 90%;
+        height: 30%;
+        letter-spacing: 1px;
+    }
+
+    .text b {
+        position: relative;
+        top: 60px;
+        left: 40px;
+        font-size: 15px;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
